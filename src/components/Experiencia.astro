@@ -1,0 +1,34 @@
+---
+import type { Code, Debug } from "astro:components"
+import ExperienciaItems from "./ExperienciaItems.astro"
+const EXPERIENCIA = [
+    {
+        date: "2021-2022",
+        title: "Desarrollador Full Stack",
+        description: "Desarrollo de aplicaciones web y móviles, utilizando tecnologías como React, Node.js, Express, MongoDB, entre otras.",
+        link:"#",
+    },
+    {
+        date: "2020-2021",
+        title: "Desarrollador Frontend",
+        description: "Desarrollo de aplicaciones web, utilizando tecnologías como React, Next.js, TailwindCSS, entre otras.",
+        link:"#",
+    },
+    {
+        date: "2019-2020",
+        title: "Desarrollador Backend",
+        description: "Desarrollo de aplicaciones web, utilizando tecnologías como Node.js, Express, MongoDB, entre otras.",
+        link:"#",
+    },
+]
+---
+<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+    {
+        EXPERIENCIA.map(experiencia =>(
+            <li class="mb-10 ms-4">
+                <ExperienciaItems {...experiencia} />
+            </li>
+        )) 
+    }
+</ol>
+

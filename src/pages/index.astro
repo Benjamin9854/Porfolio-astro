@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
+import Badge from '../components/Badge.astro'
+import SocialPill from '../components/SocialPill.astro'
+import LinkedIn from '../icon/LinkedIn.astro'
+import GitHub from '../icon/GitHub.astro'
+import Email from '../icon/Email.astro'
+import Experiencia from '../components/Experiencia.astro'
+---
+
+<Layout 
+	title="Porfolio de Antonio Bravo - Desarrollador y Programador Back y Front end con mas de 10 años de experiencia"
+	description='Contrata a Antonio Bravo para crear soluciones innovadoras y practicas a tus proyectos actuales y futuros!'
+>
+	<main>
+		<section class="w-full lg:w-[740px] mx-auto py-44">
+			<img 
+				class="rounded-full w-12 h-12 mb-4" 
+				src="../public/yo.jpg" 
+				alt="Antonio Bravo"
+			/>
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+				Hey, soy Antonio Bravo.
+				<a href="https://www.linkedin.com/in/abravo84" class="flex justify-center items-center">
+					<Badge>NO Disponible para trabajar</Badge>
+				</a>
+			</h1>	
+			<h2 class="text-2xl text-wrap">
+				<span class="text-green-200/90">+10 de experiencia.</span> 
+				<span class="text-yellow-200/90 opacity-80"> Desarrollador Web, de Punta Arenas Chile.</spans> 
+				<span class="text-red-100/90"> Especializado en crear soluciones únicas</span>
+			</h2>
+			
+			<nav class="flex gap-x-4 mt-8">
+				<SocialPill href="https://www.linkedin.com/in/abravo84">
+					<LinkedIn class="size-6"/>
+					linkedIn
+				</SocialPill>
+				<SocialPill href="#">
+					<GitHub class="size-6"/>
+					GitHub	
+				</SocialPill>
+				<SocialPill>
+					<Email class="size-6" />
+					antonio.bravo@umag.cl
+				</SocialPill>
+			</nav>
+		</section>
+
+		<section>
+			<Experiencia />
+		</section>
+	</main>
+</Layout>
