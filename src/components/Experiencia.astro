@@ -3,26 +3,20 @@ import type { Code, Debug } from "astro:components"
 import ExperienciaItems from "./ExperienciaItems.astro"
 const EXPERIENCIA = [
     {
-        date: "2021-2022",
-        title: "Desarrollador Full Stack",
-        description: "Desarrollo de aplicaciones web y móviles, utilizando tecnologías como React, Node.js, Express, MongoDB, entre otras.",
-        link:"#",
+        date: "2022",
+        title: "Aplicación administrativa Full Stack",
+        description: "Para que una empresa de productos marinos gestiones de mejor forma su inventario, les fue creada esta aplicación. Programada con una base de datos local creada desde cero, y una tecnologia .NET Framework, se dio a implementar una aplicacion amigable y eficiente capaz de organizar sus datos.",
+        link:"https://github.com/Benjamin9854/QuickSea",
     },
     {
-        date: "2020-2021",
-        title: "Desarrollador Frontend",
-        description: "Desarrollo de aplicaciones web, utilizando tecnologías como React, Next.js, TailwindCSS, entre otras.",
-        link:"#",
-    },
-    {
-        date: "2019-2020",
-        title: "Desarrollador Backend",
-        description: "Desarrollo de aplicaciones web, utilizando tecnologías como Node.js, Express, MongoDB, entre otras.",
-        link:"#",
+        date: "2023",
+        title: "Software de escaneo de asistencia",
+        description: "Para una universidad que registra las asistencia de sus estudiantes en papel, solicitaron la creación de un programa que pueda escanear los codigos QR del carnet de identidad del estudiante y guarde su asistencia en una lista virtual alcenada en la nube.",
+        link:"https://github.com/Benjamin9854/Lista_Asistencia_Virtual",
     },
 ]
 ---
-<ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+<ol class="flex justify-center items-center border-gray-200 dark:border-gray-700 my-5">                  
     {
         EXPERIENCIA.map(experiencia =>(
             <li class="mb-10 ms-4">
