@@ -23,9 +23,7 @@ const { description, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<div class="absolute inset-0 -z-10 h-full w-full items-center py-24">
-			<div class="h-full w-full transform rotate-180" style="background: radial-gradient(125% 125% at 50% 10%, #000 40%, #f00 100%);"></div>
-			<div class="h-full w-full" style="background: radial-gradient(125% 125% at 50% 10%, #000 40%, #f00 100%);"></div>
+		<div class="absolute inset-0 -z-10 h-full w-full items-center py-20">
 			<div class="h-full w-full transform rotate-180" style="background: radial-gradient(125% 125% at 50% 10%, #000 40%, #f00 100%);"></div>
 			<div class="h-full w-full" style="background: radial-gradient(125% 125% at 50% 10%, #000 40%, #f00 100%);"></div>
 			<div class="h-full w-full transform rotate-180" style="background: radial-gradient(125% 125% at 50% 10%, #000 40%, #f00 100%);"></div>
@@ -42,6 +40,9 @@ const { description, title } = Astro.props;
 	}
 	html{
 		font-family: 'Onest' system-ui, sans-serif;
+	}
+	body{
+		background: #000;
 	}
 </style>
 
